@@ -14,7 +14,7 @@ import javax.swing.JFrame;
  */
 public class DeptDeleteFrame extends javax.swing.JFrame {
 
-     DepartmentDAO dao = new DepartmentDAO();
+    DepartmentDAO dao = new DepartmentDAO();
      
     /**
      * Creates new form DeptDeleteFrame
