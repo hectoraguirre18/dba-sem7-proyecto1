@@ -86,6 +86,20 @@ public class DepartmentDAO {
             cstmt.execute();
         } catch (Exception e) {
             System.out.println("Error inserting department: " + e);
+
+        }
+    }
+    public void deleteDepartmentByNo(String number) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_DELETEBYDEPNO(?)}");
+            
+            cstmt.setString(1, number);
+            
+            
+            cstmt.execute();
+            
+        } catch (Exception e) {
+            
         }
     }
 }
