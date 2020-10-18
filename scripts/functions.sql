@@ -17,3 +17,13 @@ BEGIN
     
     RETURN v_name;
 END;
+
+CREATE OR REPLACE PROCEDURE FN_DELETEBYDEPNO(
+    dept_no IN NUMBER
+) IS BEGIN
+    DELETE 
+    FROM DEPT
+    WHERE deptno = dept_no;
+    
+END;
+    
