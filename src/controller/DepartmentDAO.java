@@ -74,4 +74,18 @@ public class DepartmentDAO {
             return null;
         }
     }
+    
+    public void deleteDepartmentByNo(String number) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_DELETEBYDEPNO(?)}");
+            
+            cstmt.setString(1, number);
+            
+            
+            cstmt.execute();
+            
+        } catch (Exception e) {
+            
+        }
+    }
 }
