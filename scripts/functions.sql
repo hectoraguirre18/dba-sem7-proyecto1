@@ -35,6 +35,15 @@ CREATE OR REPLACE PROCEDURE FN_INSERTDEPT(
     INSERT INTO DEPT VALUES (dept_no, dept_name, dept_loc);
 END;
 
+CREATE OR REPLACE PROCEDURE FN_UPDATEDEPT(
+    dept_no IN NUMBER,
+    dept_name IN VARCHAR2,
+    dept_loc IN VARCHAR2
+) IS BEGIN
+    UPDATE DEPT
+    SET DEPTNO = dept_no, DNAME = dept_name, LOC = dept_loc
+    WHERE DEPTNO = dept_no;
+END;
 
 -- Emp. Functions
 
