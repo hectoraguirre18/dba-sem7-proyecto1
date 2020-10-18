@@ -17,3 +17,11 @@ BEGIN
     
     RETURN v_name;
 END;
+
+CREATE OR REPLACE PROCEDURE FN_INSERTDEPT(
+    dept_no IN NUMBER,
+    dept_name IN VARCHAR2,
+    dept_loc IN VARCHAR2
+) IS BEGIN
+    INSERT INTO DEPT VALUES (dept_no, dept_name, dept_loc);
+END;

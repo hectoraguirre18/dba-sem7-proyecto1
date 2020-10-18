@@ -74,6 +74,11 @@ public class DeptCreateFrame extends javax.swing.JFrame {
         });
 
         jbCancel.setText("Cancel");
+        jbCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,7 +151,12 @@ public class DeptCreateFrame extends javax.swing.JFrame {
         String location = jtLocation.getText();
         
         dao.insertDepartment(number, name, location);
+        super.dispose();
     }//GEN-LAST:event_jbInsertActionPerformed
+
+    private void jbCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCancelActionPerformed
+        super.dispose();
+    }//GEN-LAST:event_jbCancelActionPerformed
 
     /**
      * @param args the command line arguments
