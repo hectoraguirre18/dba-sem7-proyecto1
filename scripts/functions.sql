@@ -78,5 +78,5 @@ CREATE OR REPLACE PROCEDURE FN_INSERTEMP(
     emp_comm IN VARCHAR2,
     emp_deptno IN VARCHAR2
 ) IS BEGIN
-    INSERT INTO EMP VALUES (emp_no, emp_name, emp_job, emp_mgr, emp_hiredate, emp_sal, emp_co7mm, emp_deptno);
+    INSERT INTO EMP VALUES (emp_no, emp_name, emp_job, emp_mgr, emp_hiredate, emp_sal, emp_comm, emp_deptno);
 END;

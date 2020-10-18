@@ -115,6 +115,25 @@ public class DepartmentDAO {
         }
     }
     
+    public void insertEmployee(String number, String name, String job, String mgr, String hireDate, String sal, String comm, String deptNo) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_INSERTEMP(?, ?, ?, ?, ?, ?, ?, ?)}");
+            
+            cstmt.setString(1, number);
+            cstmt.setString(2, name);
+            cstmt.setString(3, job);
+            cstmt.setString(4, mgr);
+            cstmt.setString(5, hireDate);
+            cstmt.setString(6, sal);
+            cstmt.setString(7, comm);
+            cstmt.setString(8, deptNo);
+            
+            cstmt.execute();
+        } catch (Exception e) {
+            System.out.println("Error inserting department: " + e);
+        }
+    }
+    
     public void deleteEmpByNo(String number) {
         try {
             CallableStatement cstmt = connection.prepareCall("{ call FN_DELETEBYEMP(?)}");
