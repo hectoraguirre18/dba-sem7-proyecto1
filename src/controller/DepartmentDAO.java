@@ -41,7 +41,7 @@ public class DepartmentDAO {
             
             ResultSet rs = ((OracleCallableStatement)cstmt).getCursor(1);
             
-            String data[] = new String[3];
+            String[] data = new String[3];
             
             while(rs.next()) {
                 data[0] = String.valueOf(rs.getInt("DEPTNO"));

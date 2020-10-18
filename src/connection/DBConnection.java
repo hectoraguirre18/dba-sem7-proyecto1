@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * @author pc
  */
 public class DBConnection {
-    Connection conn = null;
+    private Connection conn = null;
     
     public DBConnection() {
         openConnection();
