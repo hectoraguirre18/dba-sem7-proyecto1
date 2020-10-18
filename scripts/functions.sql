@@ -14,6 +14,23 @@ BEGIN
     INTO v_name
     FROM dept
     WHERE deptno = dept_no;
-    
+
     RETURN v_name;
+END;
+
+CREATE OR REPLACE PROCEDURE FN_DELETEBYDEPNO(
+    dept_no IN NUMBER
+) IS BEGIN
+    DELETE
+    FROM DEPT
+    WHERE deptno = dept_no;
+
+END;
+
+CREATE OR REPLACE PROCEDURE FN_INSERTDEPT(
+    dept_no IN NUMBER,
+    dept_name IN VARCHAR2,
+    dept_loc IN VARCHAR2
+) IS BEGIN
+    INSERT INTO DEPT VALUES (dept_no, dept_name, dept_loc);
 END;
