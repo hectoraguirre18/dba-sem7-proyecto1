@@ -6,6 +6,7 @@
 package view;
 
 import controller.DepartmentDAO;
+import javax.swing.JFrame;
 
 /**
  *
@@ -20,6 +21,7 @@ public class DeptDeleteFrame extends javax.swing.JFrame {
      */
     public DeptDeleteFrame() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
     /**
