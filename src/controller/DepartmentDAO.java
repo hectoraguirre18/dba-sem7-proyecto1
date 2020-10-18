@@ -74,4 +74,18 @@ public class DepartmentDAO {
             return null;
         }
     }
+    
+    public void insertDepartment(String number, String name, String location) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_INSERTDEPT(?, ?, ?)}");
+            
+            cstmt.setString(1, number);
+            cstmt.setString(2, name);
+            cstmt.setString(3, location);
+            
+            cstmt.execute();
+        } catch (Exception e) {
+            System.out.println("Error inserting department: " + e);
+        }
+    }
 }
