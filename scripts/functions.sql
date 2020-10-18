@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION FN_LIST RETURN SYS_REFCURSOR IS
     l_cursor SYS_REFCURSOR;
 BEGIN
-    OPEN l_cursor FOR SELECT deptno, dname, loc FROM dept;
+    OPEN l_cursor FOR SELECT deptno, dname, loc FROM dept ORDER BY deptno;
     RETURN l_cursor;
 END;
 
