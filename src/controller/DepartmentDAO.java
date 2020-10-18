@@ -114,4 +114,17 @@ public class DepartmentDAO {
             System.out.println("Error editing department: " + e);
         }
     }
+    
+    public void deleteEmpByNo(String number) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_DELETEBYEMP(?)}");
+            
+            cstmt.setString(1, number);
+            
+            cstmt.execute();
+            
+        } catch (Exception e) {
+            System.out.println("Error deleting Employee: " + e);
+        }
+    }
 }
