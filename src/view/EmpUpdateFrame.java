@@ -118,7 +118,7 @@ public class EmpUpdateFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Add");
+        jButton1.setText("Edit");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
