@@ -23,6 +23,7 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         listDepartments();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
     
     private void listDepartments() {

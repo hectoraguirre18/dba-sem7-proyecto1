@@ -22,6 +22,7 @@ public class EmpDeleteFrame extends javax.swing.JFrame {
     public EmpDeleteFrame() {
         initComponents();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
 
     /**

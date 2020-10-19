@@ -22,6 +22,7 @@ public class EmpUpdateFrame extends javax.swing.JFrame {
     public EmpUpdateFrame() {
         initComponents();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
 
     /**

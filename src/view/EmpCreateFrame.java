@@ -22,6 +22,7 @@ public class EmpCreateFrame extends javax.swing.JFrame {
     public EmpCreateFrame() {
         initComponents();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
 
     /**

@@ -22,6 +22,7 @@ public class DeptDeleteFrame extends javax.swing.JFrame {
     public DeptDeleteFrame() {
         initComponents();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
 
     /**

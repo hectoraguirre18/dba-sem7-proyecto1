@@ -23,6 +23,7 @@ public class EmpMainFrame extends javax.swing.JFrame {
         initComponents();
         listEmployees();
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null);
     }
     
     private void listEmployees() {
