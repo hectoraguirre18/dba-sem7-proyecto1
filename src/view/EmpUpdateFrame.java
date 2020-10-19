@@ -6,6 +6,7 @@
 package view;
 
 import controller.EmployeeDAO;
+import javax.swing.JFrame;
 
 /**
  *
@@ -20,6 +21,7 @@ public class EmpUpdateFrame extends javax.swing.JFrame {
      */
     public EmpUpdateFrame() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
