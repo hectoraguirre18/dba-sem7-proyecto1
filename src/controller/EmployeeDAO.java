@@ -100,4 +100,23 @@ public class EmployeeDAO {
             System.out.println("Error deleting Employee: " + e);
         }
     }
+    
+    public void editEmployee(String number, String name, String job, String mgr, String hireDate, String sal, String comm, String deptNo) {
+        try {
+            CallableStatement cstmt = connection.prepareCall("{ call FN_UPDATEDEPT(?, ?, ?, ?, ?, ?, ?, ?)}");
+            
+            cstmt.setString(1, number);
+            cstmt.setString(2, name);
+            cstmt.setString(3, job);
+            cstmt.setString(4, mgr);
+            cstmt.setString(5, hireDate);
+            cstmt.setString(6, sal);
+            cstmt.setString(7, comm);
+            cstmt.setString(8, deptNo);
+            
+            cstmt.execute();
+        } catch (Exception e) {
+            System.out.println("Error inserting department: " + e);
+        }
+    }
 }
