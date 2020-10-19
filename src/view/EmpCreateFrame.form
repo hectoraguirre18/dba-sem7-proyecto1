@@ -197,6 +197,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtHireDate">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="DD/MM/YY"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtHireDateActionPerformed"/>
       </Events>
