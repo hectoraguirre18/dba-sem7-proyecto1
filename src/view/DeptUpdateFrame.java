@@ -7,7 +7,6 @@ package view;
 
 import controller.DepartmentDAO;
 import javax.swing.JFrame;
-import javax.swing.JRootPane;
 
 /**
  *
@@ -22,7 +21,7 @@ public class DeptUpdateFrame extends javax.swing.JFrame {
      */
     public DeptUpdateFrame() {
         initComponents();
-        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
