@@ -21,7 +21,7 @@ public class DeptCreateFrame extends javax.swing.JFrame {
      */
     public DeptCreateFrame() {
         initComponents();
-        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
