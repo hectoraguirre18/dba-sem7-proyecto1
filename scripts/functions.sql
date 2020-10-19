@@ -90,7 +90,7 @@ CREATE OR REPLACE PROCEDURE FN_INSERTEMP(
     INSERT INTO EMP VALUES (emp_no, emp_name, emp_job, emp_mgr, emp_hiredate, emp_sal, emp_comm, emp_deptno);
 END;
 
-CREATE OR REPLACE PROCEDURE FN_UPDATEDEPT(
+CREATE OR REPLACE PROCEDURE FN_UPDATEEMP(
     emp_no IN NUMBER,
     emp_name IN VARCHAR2,
     emp_job IN VARCHAR2,

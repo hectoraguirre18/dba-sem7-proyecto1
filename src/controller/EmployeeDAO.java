@@ -103,7 +103,7 @@ public class EmployeeDAO {
     
     public void editEmployee(String number, String name, String job, String mgr, String hireDate, String sal, String comm, String deptNo) {
         try {
-            CallableStatement cstmt = connection.prepareCall("{ call FN_UPDATEDEPT(?, ?, ?, ?, ?, ?, ?, ?)}");
+            CallableStatement cstmt = connection.prepareCall("{ call FN_UPDATEEMP(?, ?, ?, ?, ?, ?, ?, ?)}");
             
             cstmt.setString(1, number);
             cstmt.setString(2, name);
