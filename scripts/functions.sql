@@ -100,7 +100,7 @@ CREATE OR REPLACE PROCEDURE FN_UPDATEDEPT(
     emp_comm IN VARCHAR2,
     emp_deptno IN VARCHAR2
 ) IS BEGIN
-    UPDATE DEPT
+    UPDATE EMP
     SET ENAME = emp_name,
         JOB = emp_job,
         MGR = emp_mgr,
