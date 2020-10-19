@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.DepartmentDAO;
+import controller.EmployeeDAO;
 
 /**
  *
@@ -13,7 +13,7 @@ import controller.DepartmentDAO;
  */
 public class EmpDeleteFrame extends javax.swing.JFrame {
 
-    DepartmentDAO dao = new DepartmentDAO();
+    EmployeeDAO dao = new EmployeeDAO();
 
     /**
      * Creates new form EmpDeleteFrame

@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.DepartmentDAO;
+import controller.EmployeeDAO;
 
 /**
  *
@@ -13,7 +13,7 @@ import controller.DepartmentDAO;
  */
 public class EmpCreateFrame extends javax.swing.JFrame {
     
-    DepartmentDAO dao = new DepartmentDAO(); 
+    EmployeeDAO dao = new EmployeeDAO(); 
 
     /**
      * Creates new form EmpCreateFrame
@@ -93,6 +93,7 @@ public class EmpCreateFrame extends javax.swing.JFrame {
             }
         });
 
+        jtHireDate.setToolTipText("DD/MM/YY");
         jtHireDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtHireDateActionPerformed(evt);

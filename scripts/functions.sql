@@ -89,3 +89,24 @@ CREATE OR REPLACE PROCEDURE FN_INSERTEMP(
 ) IS BEGIN
     INSERT INTO EMP VALUES (emp_no, emp_name, emp_job, emp_mgr, emp_hiredate, emp_sal, emp_comm, emp_deptno);
 END;
+
+CREATE OR REPLACE PROCEDURE FN_UPDATEDEPT(
+    emp_no IN NUMBER,
+    emp_name IN VARCHAR2,
+    emp_job IN VARCHAR2,
+    emp_mgr IN VARCHAR2,
+    emp_hiredate IN VARCHAR2,
+    emp_sal IN VARCHAR2,
+    emp_comm IN VARCHAR2,
+    emp_deptno IN VARCHAR2
+) IS BEGIN
+    UPDATE DEPT
+    SET ENAME = emp_name,
+        JOB = emp_job,
+        MGR = emp_mgr,
+        HIREDATE = emp_hiredate,
+        SAL = emp_sal,
+        COMM = emp_comm,
+        DEPTNO = emp_deptno
+    WHERE EMPNO = emp_no;
+END;
