@@ -152,7 +152,9 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        System.exit(0);
+        super.dispose();
+        MainMainFrame mmf = new MainMainFrame();
+        mmf.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
     
     private void jtDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtDeleteButtonActionPerformed
@@ -202,6 +204,13 @@ public class MainFrame extends javax.swing.JFrame {
                 new MainFrame().setVisible(true);
             }
         });
+    }
+    
+    @Override
+    public void dispose() {
+        MainMainFrame mmf = new MainMainFrame();
+        mmf.setVisible(true);
+        super.dispose();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
