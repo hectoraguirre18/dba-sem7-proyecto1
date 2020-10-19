@@ -51,7 +51,7 @@ public class EmpMainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setText("Department List");
+        jLabel3.setText("Employee List");
 
         jtList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -147,7 +147,7 @@ public class EmpMainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        DeptUpdateFrame upd = new DeptUpdateFrame();
+        EmpUpdateFrame upd = new EmpUpdateFrame();
         upd.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
